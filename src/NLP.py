@@ -1,7 +1,4 @@
-__author__ = 'ejjeong'
-
 import nltk
-from konlpy.tag import Twitter
 from nltk import regexp_tokenize
 
 class NLP:

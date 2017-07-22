@@ -1,17 +1,16 @@
-__author__ = 'ejjeong'
-
 import os
-import sys
-import numpy as np
 import random as rd
 from tkinter import font
-import Globals
+
+import numpy as np
+
+from src import Globals
 
 imagePath = os.path.join(os.path.dirname(os.path.realpath(__file__)), "images")
 
 #from PIL import Image, ImageTk
 import tkinter as tk
-import tkinter.ttk as ttk
+
 
 class PicWin(tk.Canvas):
 
@@ -42,7 +41,7 @@ class PicWin(tk.Canvas):
             return
 
         colorSet = set(Globals.Colors)
-        colorId = rd.sample(colorSet, len(Globals.Colors)-1)
+        colorId = rd.sample(colorSet, len(Globals.Colors) - 1)
         if len(colorId) < wordCount:
             for i in range(0, wordCount-len(colorId)):
                 colorId.append(colorId[i])

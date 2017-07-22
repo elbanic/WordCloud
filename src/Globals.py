@@ -1,4 +1,3 @@
-__author__ = 'ejjeong'
 
 Colors = ["red",
           "orange",

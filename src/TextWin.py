@@ -1,5 +1,3 @@
-__author__ = 'ejjeong'
-
 import tkinter as tk
 import tkinter.ttk as ttk
 
